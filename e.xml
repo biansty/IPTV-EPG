@@ -27369,6 +27369,15 @@
 	<programme channel="咪咕综合体育" start="20250805120500 +0800" stop="20250805123000 +0800">
 		<title lang="zh">睛彩b7体坛深瞳第四期</title>
 	</programme>
+	<programme channel="咪咕综合体育" start="20250805123000 +0800" stop="20250805124500 +0800">
+		<title lang="zh">频道宣传</title>
+	</programme>
+	<programme channel="咪咕综合体育" start="20250805124500 +0800" stop="20250805130000 +0800">
+		<title lang="zh">睛彩圈圈点第四期</title>
+	</programme>
+	<programme channel="咪咕综合体育" start="20250805130000 +0800" stop="20250805144000 +0800">
+		<title lang="zh">英超赛场-英超夏季系列赛 埃弗顿-伯恩茅斯</title>
+	</programme>
 	<channel id="咪咕足球">
 		<display-name lang="zh">咪咕足球</display-name>
 	</channel>
@@ -39257,6 +39266,9 @@
 	</programme>
 	<programme channel="惊悚悬疑" start="20250805103900 +0800" stop="20250805121800 +0800">
 		<title lang="zh">危险境地</title>
+	</programme>
+	<programme channel="惊悚悬疑" start="20250805121800 +0800" stop="20250805130600 +0800">
+		<title lang="zh">美国DoctorSanton免疫包-渠道（右）</title>
 	</programme>
 	<channel id="成都公共">
 		<display-name lang="zh">成都公共</display-name>
@@ -81876,6 +81888,9 @@
 	<programme channel="黑莓动画" start="20250805110000 +0800" stop="20250805124000 +0800">
 		<title lang="zh">第十四个目标 中文版</title>
 	</programme>
+	<programme channel="黑莓动画" start="20250805124000 +0800" stop="20250805142000 +0800">
+		<title lang="zh">通往天国的倒计时 中文版</title>
+	</programme>
 	<channel id="黑莓电影">
 		<display-name lang="zh">黑莓电影</display-name>
 	</channel>
@@ -82749,6 +82764,9 @@
 	<programme channel="newtv超级综艺" start="20250805113700 +0800" stop="20250805125400 +0800">
 		<title lang="zh">越战越勇</title>
 	</programme>
+	<programme channel="newtv超级综艺" start="20250805125400 +0800" stop="20250805142900 +0800">
+		<title lang="zh">此生要去的100个地方</title>
+	</programme>
 	<channel id="newtv超级体育">
 		<display-name lang="zh">NEWTV超级体育</display-name>
 	</channel>
@@ -82914,6 +82932,9 @@
 	<programme channel="newtv精品大剧" start="20250805121300 +0800" stop="20250805123200 +0800">
 		<title lang="zh">南同虫草菌丝体洋参胶囊01</title>
 	</programme>
+	<programme channel="newtv精品大剧" start="20250805123200 +0800" stop="20250805133700 +0800">
+		<title lang="zh">04_鹊刀门传奇2</title>
+	</programme>
 	<channel id="newtv精品纪录">
 		<display-name lang="zh">NEWTV精品纪录</display-name>
 	</channel>
@@ -82965,6 +82986,12 @@
 	<programme channel="newtv精品纪录" start="20250805121300 +0800" stop="20250805122700 +0800">
 		<title lang="zh">04_孙键：我与“南海一号”</title>
 	</programme>
+	<programme channel="newtv精品纪录" start="20250805122700 +0800" stop="20250805124200 +0800">
+		<title lang="zh">05_胡兴军：我在无人区考古</title>
+	</programme>
+	<programme channel="newtv精品纪录" start="20250805124200 +0800" stop="20250805125700 +0800">
+		<title lang="zh">06_张东菊：我在高原上考古</title>
+	</programme>
 	<channel id="newtv古装剧场">
 		<display-name lang="zh">NEWTV古装剧场</display-name>
 	</channel>
@@ -83007,6 +83034,9 @@
 	<programme channel="newtv古装剧场" start="20250805114500 +0800" stop="20250805123000 +0800">
 		<title lang="zh">30_独孤天下</title>
 	</programme>
+	<programme channel="newtv古装剧场" start="20250805123000 +0800" stop="20250805131700 +0800">
+		<title lang="zh">LECEA超轻结晶钛炒锅-渠道（右）</title>
+	</programme>
 	<channel id="newtv军旅剧场">
 		<display-name lang="zh">NEWTV军旅剧场</display-name>
 	</channel>
@@ -83045,6 +83075,9 @@
 	</programme>
 	<programme channel="newtv军旅剧场" start="20250805114700 +0800" stop="20250805122700 +0800">
 		<title lang="zh">《超级美味》推荐第1期</title>
+	</programme>
+	<programme channel="newtv军旅剧场" start="20250805122700 +0800" stop="20250805134100 +0800">
+		<title lang="zh">10_黑狐之风影（修复版）</title>
 	</programme>
 	<channel id="newtv家庭剧场">
 		<display-name lang="zh">NEWTV家庭剧场</display-name>
@@ -83135,6 +83168,9 @@
 	</programme>
 	<programme channel="newtv热播精选" start="20250805111400 +0800" stop="20250805123500 +0800">
 		<title lang="zh">怒火追凶</title>
+	</programme>
+	<programme channel="newtv热播精选" start="20250805123500 +0800" stop="20250805133700 +0800">
+		<title lang="zh">保罗麦克牛皮凉席</title>
 	</programme>
 	<channel id="newtv爱情喜剧">
 		<display-name lang="zh">NEWTV爱情喜剧</display-name>
@@ -83265,6 +83301,9 @@
 	<programme channel="newtv怡伴健康" start="20250805115400 +0800" stop="20250805123400 +0800">
 		<title lang="zh">《超级美味》推荐第1期</title>
 	</programme>
+	<programme channel="newtv怡伴健康" start="20250805123400 +0800" stop="20250805150300 +0800">
+		<title lang="zh">京剧《铁弓缘》</title>
+	</programme>
 	<channel id="newtv潮妈辣婆">
 		<display-name lang="zh">NEWTV潮妈辣婆</display-name>
 	</channel>
@@ -83312,6 +83351,9 @@
 	</programme>
 	<programme channel="newtv潮妈辣婆" start="20250805105800 +0800" stop="20250805124200 +0800">
 		<title lang="zh">第31集：上海 炸猪排 炒年糕</title>
+	</programme>
+	<programme channel="newtv潮妈辣婆" start="20250805124200 +0800" stop="20250805132800 +0800">
+		<title lang="zh">19_似锦</title>
 	</programme>
 	<channel id="newtv军事评论">
 		<display-name lang="zh">NEWTV军事评论</display-name>
@@ -83394,6 +83436,9 @@
 	<programme channel="newtv军事评论" start="20250805121500 +0800" stop="20250805123700 +0800">
 		<title lang="zh">二战沙场b7栋派尔（中）</title>
 	</programme>
+	<programme channel="newtv军事评论" start="20250805123700 +0800" stop="20250805125900 +0800">
+		<title lang="zh">二战沙场b7栋派尔（下）</title>
+	</programme>
 	<channel id="newtv炫舞未来">
 		<display-name lang="zh">NEWTV炫舞未来</display-name>
 	</channel>
@@ -83453,6 +83498,9 @@
 	</programme>
 	<programme channel="newtv炫舞未来" start="20250805120900 +0800" stop="20250805122300 +0800">
 		<title lang="zh">第13集：北京卤煮火锅</title>
+	</programme>
+	<programme channel="newtv炫舞未来" start="20250805122300 +0800" stop="20250805130900 +0800">
+		<title lang="zh">生活服务</title>
 	</programme>
 	<channel id="newtv精品综合">
 		<display-name lang="zh">NEWTV精品综合</display-name>
@@ -83516,6 +83564,9 @@
 	</programme>
 	<programme channel="newtv惊悚悬疑" start="20250805103900 +0800" stop="20250805121800 +0800">
 		<title lang="zh">危险境地</title>
+	</programme>
+	<programme channel="newtv惊悚悬疑" start="20250805121800 +0800" stop="20250805130600 +0800">
+		<title lang="zh">美国DoctorSanton免疫包-渠道（右）</title>
 	</programme>
 	<channel id="newtv金牌综艺">
 		<display-name lang="zh">NEWTV金牌综艺</display-name>
