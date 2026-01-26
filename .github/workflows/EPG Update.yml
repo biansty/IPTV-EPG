@@ -1,20 +1,55 @@
 name: EPG Update
- 
+
+# 触发条件：push事件（仅master/main分支） + 每小时整点
 on:
   push:
+    branches: [ master, main ]  # 限定仅推送到主分支时触发
   schedule:
-    - cron: 0 * * * *
+    - cron: '0 * * * *'  # cron表达式加引号更规范
 
 jobs:
-  build:
+  update-epg:  # 任务名更语义化
     runs-on: ubuntu-latest
+    # 设置权限：允许操作仓库代码
+    permissions:
+      contents: write
     steps:
-    - uses: actions/checkout@v3
-    - name: EPG Update
-      run: |
-        rm -f e.xml && wget https://epg.112114.xyz/pp.xml -O e.xml
-        git config --global user.email "2969225395@qq.com"
-        git config --global user.name "biansty"
-        git add e.xml
-        git commit -m "Update e.xml"
-        git push -f origin master 
+      # 1. 拉取仓库代码（指定分支）
+      - name: Checkout repository
+        uses: actions/checkout@v4  # 升级到最新版v4
+        with:
+          ref: ${{ github.ref }}  # 拉取当前触发的分支
+
+      # 2. 下载并更新EPG文件（增加异常处理）
+      - name: Download EPG file
+        run: |
+          # 删除旧文件（不存在则忽略错误）
+          rm -f e.xml || true
+          # 下载文件（超时10秒，失败则终止工作流）
+          wget --timeout=10 https://epg.112114.xyz/pp.xml -O e.xml || {
+            echo "Error: 下载EPG文件失败"
+            exit 1
+          }
+          # 检查文件是否下载成功（大小>0）
+          if [ ! -s e.xml ]; then
+            echo "Error: 下载的e.xml文件为空"
+            exit 1
+          fi
+
+      # 3. 提交并推送更新（取消强制推送，仅当文件有变化时提交）
+      - name: Commit and push changes
+        run: |
+          # 配置Git用户信息（使用GitHub Actions内置邮箱更规范）
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "github-actions[bot]"
+          
+          # 检查文件是否有变化（无变化则跳过提交）
+          if git diff --quiet e.xml; then
+            echo "Info: e.xml文件无变化，无需提交"
+            exit 0
+          fi
+          
+          # 提交并推送（非强制推送，更安全）
+          git add e.xml
+          git commit -m "Auto update EPG: $(date +'%Y-%m-%d %H:%M:%S')"  # 提交信息带时间戳
+          git push origin ${{ github.ref_name }}  # 推送到当前分支
